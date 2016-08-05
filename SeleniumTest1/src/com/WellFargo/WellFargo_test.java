@@ -77,14 +77,7 @@ public class WellFargo_test {
 				action.moveToElement(insurance).build().perform();
 		driver.findElement(By.xpath("//*[@id='insurance']/div[1]/div[2]/ul/li[1]/a")).click();
 		
-		Thread.sleep(3000);	
-		//Step 8: Enter Zipcode
-		WebElement zipcode = driver.findElement(By.id("zipCode"));
-		zipcode.sendKeys("1234");
-		zipcode.getText();
-		System.out.println("The zipcode entered is " +"\""+ zipcode.getAttribute("value")+"\"");
-		driver.findElement(By.xpath("//*[@id='c28close']/img")).click();
-		driver.close();
+	
 		
 		
 		
